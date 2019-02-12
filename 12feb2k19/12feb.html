@@ -10,35 +10,40 @@
             </header>   
         </div>
         <div id="main">
-            <div class="form"><form><br>
-                <label>Title</label>
-                <select class="titlebox">
-                    <option>Mr.</option>
-                    <option>Mrs.</option>
-                </select><br><br>
+            <div class="form">
+                <form><br>
+                    <label>Title</label>
+                    <select class="titlebox">
+                        <option>Mr.</option>
+                        <option>Mrs.</option>
+                    </select><br><br>
                     <label>First name</label><input class="boxalign" type = "text" name = "first_name" /><br><br>
-
                     <label>Last name</label> <input class="boxalign" type = "text" name = "last_name" /><br><br>
-        
                     <label>DOB</label><input class="titlebox" type = "date"  size="20"  name = "dob" /><br><br>
-                    
                     <label class="textalign">Full Address</label><textarea class="tarea1" rows="5" cols="22"></textarea><br><br>
-                    <label>Items You want</label>  <select class="selectbox"><option>Item 1</option><option>Item 2</option><option>Item 3</option></select> <br><br>                 
-                    <label>Choose Any</label><input class="tarea1" type="radio" name="rdo" value="one" checked> Choose One<br>
-                    <input class="radioalign" type="radio" name="rdo" value="two"> Choose Two<br>
-                    <input class="radioalign" type="radio" name="rdo" value="Three"> Choose Three<br><br>
-                    
-                    <label>Increment Number</label> <input type="number" max="1000" min="0" value="0"><br><br>
+                    <label>Items You want</label>
+                    <select class="selectbox">
+                        <option>Item 1</option>
+                        <option>Item 2</option>
+                        <option>Item 3</option>
+                    </select> <br><br>                 
+                    <label>Choose Any</label>
+                        <input class="tarea1" type="radio" name="rdo" value="one" checked> Choose One<br>
+                        <input class="radioalign" type="radio" name="rdo" value="two"> Choose Two<br>
+                        <input class="radioalign" type="radio" name="rdo" value="Three"> Choose Three<br><br>
+                    <label>Increment Number</label> 
+                        <input type="number" max="1000" min="0" value="0"><br><br>
                     <input class="checkbox" type="checkbox" name="check1" value=""> Agree with terms and conditions<br><br>
                     <center><button type="submit">Register</button></center>
-                </form></div>
+                </form>
+            </div>
             <div class="rightdiv"><iframe src="rohit.html" height="600" width="440"></iframe></div>
         </div>
         <div class="footertextalign">
-                <footer class="footer">
-                    <center><h4>&copy;Kelltontech.com All Rights Reserved 2019</h4></center>
-                </footer>   
-            </div>
+            <footer class="footer">
+                <center><h4>&copy;Kelltontech.com All Rights Reserved 2019</h4></center>
+            </footer>   
+        </div>
     </body>
 </html>
 
@@ -54,17 +59,6 @@
         height: 60px;
         position: fixed;
         width: 100%;
-    }
-    .footer{
-        background-color: rgba(168, 163, 163, 0.973);
-        color: black;
-        margin-left: -8px;
-        height: 60px;
-        position: fixed;
-        width: 100%;
-    }
-    .selectbox{
-        margin-left:15px;
     }
     .floater{
         float:right;
@@ -89,13 +83,10 @@
        flex: 3;
     }
     #main div:nth-of-type(2) {
-flex: 1;    }
-.styling{
-        float: right;
-        margin-top: 60px;
+        flex: 1;    
     }
-    .para{
-        text-align: justify;
+    .selectbox{
+        margin-left:15px;
     }
     .boxalign{
         margin-left:50px;
@@ -106,18 +97,12 @@ flex: 1;    }
     .tarea1{
         margin-left: 38px;
     }
-    .tarea2{
-        margin-left: 20px;
-    }
     .radioalign{
         padding-left: 20px;
         margin-left: 120px;
     }
     .checkbox{
         margin-left: 125px;
-    }
-    .draftbutton{
-        margin-left: 45px;
     }
     .textalign{
         vertical-align: top;
@@ -129,5 +114,13 @@ flex: 1;    }
     .rightdiv{
         background-color:rgb(130, 144, 202);
         overflow: auto;
+    }
+    .footer{
+        background-color: rgba(168, 163, 163, 0.973);
+        color: black;
+        margin-left: -8px;
+        height: 60px;
+        position: fixed;
+        width: 100%;
     }
 </style>
