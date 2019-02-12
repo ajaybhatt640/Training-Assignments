@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <image width="120px" src="kelltonpic.jpg" alt="kelltonLogo"></image>&nbsp;
+        <a href="home.com">Home</a>&nbsp;|
+        <a href="Products.com">Products</a>&nbsp;|
+        <a href="Company.com">Company</a>&nbsp;|
+        <a href="Blog.com">Blog</a>
+        <input class="styling" type="search" placeholder="Search here....">
+        <center><h1>Online Registration</h1></center>
+        <p class="para">Kellton Tech Solutions Ltd. is an Indian information technology and outsourcing 
+        company headquartered in Hyderabad, India with offices in United States and Europe.The company 
+        reported net revenues of 7.39 billion with more than 1400 employees.Kellton Tech developed mSehat, 
+        a State Innovations in Family Planning Services Agency (SIFPSA) project to help health workers in 
+        five districts of Uttar Pradesh to record maternal-infant data in real time and provide them 
+        healthcare services.
+        </p>
+        <form>
+            <label>Title</label><select class="titlebox">
+                <option>Mr.</option>
+                <option>Mrs.</option>
+            </select><br><br>
+            <label>First name</label><input class="boxalign" type = "text" name = "first_name" /><br><br>
+
+            <label>Last name</label> <input class="boxalign" type = "text" name = "last_name" /><br><br>
+
+            <label>DOB</label><input class="titlebox" type = "date"  size="20"  name = "dob" /><br><br>
+            
+            <label class="textalign">Full Address</label><textarea class="tarea1" rows="5" cols="22"></textarea><br><br>
+
+            <label class="textalign">Items You Want</label><textarea class="tarea2" rows="5" cols="22" placeholder="Item 1                Item 2              Item 3"></textarea><br><br>
+            
+            <label>Choose Any</label><input class="tarea1" type="radio" name="rdo" value="one" checked> Choose One<br>
+            <input class="radioalign" type="radio" name="rdo" value="two"> Choose Two<br>
+            <input class="radioalign" type="radio" name="rdo" value="Three"> Choose Three<br><br>
+            
+            <label>Increment Number</label> <input type="number" max="1000" min="0" value="0"><br><br>
+            <input class="checkbox" type="checkbox" name="check1" value=""> Agree with terms and conditions<br><br>
+            <button class="checkbox" type="submit">Register</button> <button class="draftbutton" type="button">Save Draft</button>
+        </form>
+    </body>
+</html>
+
+
+<style>
+    .styling{
+        float: right;
+        margin-top: 60px;
+    }
+    .para{
+        text-align: justify;
+    }
+    .boxalign{
+        margin-left:50px;
+    }
+    .titlebox{
+        margin-left:85px;
+    }
+    .tarea1{
+        margin-left: 38px;
+    }
+    .tarea2{
+        margin-left: 20px;
+    }
+    .radioalign{
+        padding-left: 20px;
+        margin-left: 120px;
+    }
+    .checkbox{
+        margin-left: 125px;
+    }
+    .draftbutton{
+        margin-left: 45px;
+    }
+    .textalign{
+        vertical-align: top;
+    }
+</style>
