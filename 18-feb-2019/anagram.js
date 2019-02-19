@@ -20,7 +20,7 @@ for(var j = 0; j < str2.length; j++){
 //Sorting Array1 
 for(var k=1;k<strarray1.length;k++)
 {
-    for(l=0;l<strarray1.length-l;l++)
+    for(l=0;l<strarray1.length;l++)
     {
         if(strarray1[l]>strarray1[l+1])
         {
@@ -40,7 +40,7 @@ for(var l=0;l<strarray1.length;l++)
 //Sorting Array2 
 for(var k=1;k<strarray2.length;k++)
 {
-    for(l=0;l<strarray2.length-l;l++)
+    for(l=0;l<strarray2.length;l++)
     {
         if(strarray2[l]>strarray2[l+1])
         {
