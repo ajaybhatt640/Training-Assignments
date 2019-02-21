@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body style="background-color: cadetblue;text-align: center">
+    <h2 style = "line-height: 10"><span id='span'></span></h2>
+    <h2><span id='day'></span></h2>
+</body>
+</html>
+
+<script>
+    var span = document.getElementById('span');
+    var x = document.getElementById('day');
+    function time() 
+    {
+        var d = new Date();
+        var dt = d.getDate();
+        var mn = d.getMonth()+1;
+        var num = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var  day = d.getDay();
+        var s = d.getSeconds();
+        var m = d.getMinutes();
+        var h = d.getHours();
+        if(m<10){
+            m = "0" + m;
+        }
+        if(s<10){
+            s = "0" + s;
+        }
+        if(h<10){
+            h = "0" + h;
+        }
+        if(dt<10){
+            dt = "0" + dt;
+        }
+        if(mn<10){
+            mn = "0" + mn;
+        }
+        span.textContent = "Time ->" + h + ":" + m + ":" + s;
+        x.textContent = "Date -> " +dt + "." + mn + "." + d.getFullYear() + " " + num[day];
+    }
+    setInterval(time, 1000);
+</script>
