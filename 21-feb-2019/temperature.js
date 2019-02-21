@@ -1,14 +1,3 @@
-/*insert() - records a new temperature
-
-get_max() - returns the highest temp we've seen so far
-
-get_min() - returns the lowest temp we've seen so far
-
-get_mean() - returns the mean of all temps we've seen so far
-
-get_mode() - returns a mode of all temps we've seen so far
-
-*/
 var temperature = [
     {
         'temp' : 20
@@ -29,11 +18,13 @@ var temperature = [
 
 var max=0,min=temperature[0].temp,mean=0;
 
+//function to push new object into array
 function insert(newTemp)
 {
     temperature.push({'temp':newTemp});
 }
 
+//function to find maximum temperature
 function get_max()
 {
     for(var i=0;i<temperature.length;i++)
@@ -45,6 +36,7 @@ function get_max()
     }console.log(max);
 }
 
+//function to find minimum temperature
 function get_min()
 {
     for(var j=0;j<temperature.length;j++)
@@ -56,6 +48,7 @@ function get_min()
     }console.log(min);
 }
 
+//function to find mean of all temperatures
 function get_mean()
 {
     for(var k=0;k<temperature.length;k++)
@@ -66,6 +59,7 @@ function get_mean()
     console.log(mean);
 }
 
+//function to find mode
 function get_mode()
 {
     var mode = {};
@@ -83,7 +77,7 @@ function get_mode()
     console.log(mode);
 }
 
-insert(90);
+insert(90);//inserting new temperature
 get_max();
 get_min();
 get_mean();
